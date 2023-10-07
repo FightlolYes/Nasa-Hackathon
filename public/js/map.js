@@ -1,7 +1,14 @@
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
+
+    const names = []
+    const coordinates = []
+    let marker
+    
     const map = L.map('map', {
-        center: [25.3548, 51.1839],
+        center: [28.3548, 51.1839],
         maxBounds: [
         [90, -180], 
         [-90, 180], 
@@ -13,20 +20,25 @@ document.addEventListener("DOMContentLoaded", () => {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 3, minZoom:2
     }).addTo(map)
-    
 
-    const waypoints = [
-        {coordinates: [9.866224064560276,169, 169.6734452228526], id: 1},
-        {coordinates: [11.064384410094505, -109.2093559825302], id: 1},
-        {coordinates: [12.839205775242714,61.821954812449874], id: 1},
-        {coordinates: [-29.352445085841218,74.61601321246778], id: 1},
-        {coordinates: [73.65353873235472,-1.6994228578145032], id: 1},
-    ]
-
-    waypoints.forEach(waypoint => {
-        const marker = L.marker(waypoint.coordinates).addTo(map)
-        marker.on('click', () => {
-            window.location.href = `/waypoint/${waypoint.id}`
-        })
+    fetch('http://localhost:3000/api/coordinates')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json() 
     })
+    .then(data => {
+      data.forEach(item => {
+          names.push(item.name)
+          marker = L.marker(item.coordinates).addTo(map)
+          console.log(item.coordinates)
+          marker.on('click', () => {
+            window.location.href = `/waypoint/${encodeURIComponent(item.name)}`
+          })
+      })
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
+    });
 })

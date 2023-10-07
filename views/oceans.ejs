@@ -1,6 +1,49 @@
 <%- include("partials/header") -%>
 
-    <h1 class="Name">Pacific Ocean</h1>
+    <h1 class="Name"><%= name %></h1>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="description"><%= description %></p>
+            </div>
+            <div class="col-md-6">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Surface Area</td>
+                        <td><%= surface_area %></td>
+                    </tr>
+                    <tr>
+                        <td>Average Depth</td>
+                        <td><%= Avg_Depth %></td>
+                    </tr>
+                    <tr>
+                        <td>Average Temperature</td>
+                        <td><%= Avg_temperature %></td>
+                    </tr>
+                    <tr>
+                        <td>Max Depth</td>
+                        <td><%= Max_Depth %></td>
+                    </tr>
+                    <tr>
+                        <td>Max Depth Location</td>
+                        <td><%= Max_Depth_Location %></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <script src="/js/oceans/<%= name %>.js"></script>
 
 <%- include("partials/footer") -%> 

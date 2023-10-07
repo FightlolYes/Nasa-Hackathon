@@ -24,9 +24,47 @@ body {
     border-width: 10px;
     margin-left: 10%;
     margin-top: 5%;
-    width: 1200px; /* Set the desired width for your map container */
-    height: 400px; /* Set the desired height for your map container */
+    width: 80%; /* Set the desired width for your map container */
+    height: 20%; /* Set the desired height for your map container */
     border: 1px solid #ccc; /* Optional: Add a border to the map container */
+}
+
+.oceans-map-container {
+    border-width: 10px;
+    margin-left: 30%;
+    margin-right: 5%;
+    width: 50%; /* Set the desired width for your map container */
+    height: 50%; /* Set the desired height for your map container */
+    border: 1px solid #ccc; /* Optional: Add a border to the map container */
+}
+
+.description {
+    padding-top: 10%;
+    font-size: 25px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 10% auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
 }
 
 .Name {
