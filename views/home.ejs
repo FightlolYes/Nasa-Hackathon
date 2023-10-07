@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-    <h1>Hello</h1>
+  <!-- Your navigation bar and other content here -->
+  <script src="/js/live-wallpaper.js"></script>
+  <%- include("partials/header") -%>
 
-    <div class="map-container">
-        <div id="map" style="height: 400px;"></div>
-      </div>    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="/js/map.js"></script>
+
+  <!-- Include your JavaScript files here -->
+  
+
+      <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="\assets\videos\ENDANGERED SPECIES AND WATER QUALITY (1).mp4" type="video/mp4"> <!-- Replace with the actual path to your video -->
+            Your browser does not support the video tag.
+        </video>
+                <div class="map-container">
+                    <div id="map" style="height: 450px;">
+                    </div>
+                </div>    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                <script src="/js/map.js"></script>
+          </div>
+
+<%- include("partials/footer") -%> 
+
 </body>
 </html>
+
+

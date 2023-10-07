@@ -1,15 +1,129 @@
+
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0; /* Optional: Set a background color for the page */
-  }
-  
-  .map-container {
-    width: 1200px; /* Set the desired width for your map container */
-    height: 400px; /* Set the desired height for your map container */
-    border: 1px solid #ccc; /* Optional: Add a border to the map container */
-  }
+  height: 10%;
+  width: 100%;
+}
+
+/* NavBar */  
+/* NavBar */
+.navbar {
+  padding-left: 3%;
+  padding-right: 3%;
+  color: black;
+  font-size: 200%;
+  font-family: 'Kulim Park', sans-serif;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value (0.5) for transparency */
+}
+
+.navbar-brand {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 200%;
+  color: whi;
+}
+
+
+.map-container {
+  border-width: 10px;
+  margin-left: 15%;
+  padding-right: 28.5% !important;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin-top: 5%;
+  width: 1200px; /* Set the desired width for your map container */
+  height: 400px; /* Set the desired height for your map container */
+  border: 1px solid #ccc; /* Optional: Add a border to the map container */
+}
+
+.Name {
+  margin-left: 35%;
+  margin-top: 5%;
+  font-size: 75px;
+}
+/* CSS in your styles.css file or inline style */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Place it behind other content */
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Ocean-themed navbar and video styles (previous styles) */
+
+/* Center the map container within the video container */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set the height of the video container to 100% of the viewport height */
+}
+
+.map-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map-container {
+  border-width: 10px;
+  width: 100%; /* Same width as the video container */
+  height: 100%; /* Same height as the video container */
+  border: 1px solid #ccc;
+  /* Additional map styles go here */
+}
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ocean-themed navbar styles */
+.navbar {
+  background-color: #1e3140; /* Dark blue background color resembling the ocean */
+  color: #ffffff; /* White text color */
+  padding: 10px ;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-bottom: 2%;
+  padding: 0 20px;
+}
+
+.navbar-logo img {
+  height: 40px; /* Set the height of your logo */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.navbar-menu li {
+  font-size: 150%;
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: #ffffff; /* White link color */
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #0099cc; /* Change link color on hover (e.g., light blue) */
+}
