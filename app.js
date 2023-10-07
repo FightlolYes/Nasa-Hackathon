@@ -1,11 +1,13 @@
 const express = require("express")
 const mongoose = require("mongoose")
+const cors = require("cors")
 
 const app = express()
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({extended: false}))
 app.use(express.static("public"))
+app.use(cors())
 
 const url = "mongodb+srv://yashpatil:Yash232107@hackathon.syilzc3.mongodb.net/?retryWrites=true&w=majority"
 

@@ -8,6 +8,12 @@
                 <p class="description"><%= description %></p>
             </div>
             <div class="col-md-6">
+
+                <div class="ocean-map-container">
+                    <div id="map" style="height: 1850%;">
+                    </div>
+                </div> 
+
                 <table>
                     <thead>
                     <tr>
@@ -40,10 +46,21 @@
                 </table>
             </div>
         </div>
+
+    <h1 class="Name">Species</h1>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/species/Staghorn Coral.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Staghorn Coral</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
 
+
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    
     <script src="/js/oceans/<%= name %>.js"></script>
 
 <%- include("partials/footer") -%> 

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         maxZoom: 3, minZoom:2
     }).addTo(map)
 
-    fetch('http://localhost:3000/api/coordinates')
+    fetch('/api/coordinates')
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
