@@ -28,3 +28,9 @@ body {
     height: 400px; /* Set the desired height for your map container */
     border: 1px solid #ccc; /* Optional: Add a border to the map container */
 }
+
+.Name {
+    margin-left: 35%;
+    margin-top: 5%;
+    font-size: 75px;
+}

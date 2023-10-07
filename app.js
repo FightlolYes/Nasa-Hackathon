@@ -13,8 +13,11 @@ app.get('/', (req, res) => {
 app.get("/waypoint/:id", (req, res) => {
     const waypointId = req.params.id
 
-    res.send(`You clicked on waypoint ${waypointId}`)
+    res.render("oceans", {id: "1"})
 })
+
+waypointRoute = require("./routes/waypoint/waypoint")
+app.use("/waypoint", waypointRoute)
 
 app.listen(3000, function() {
     console.log("Server started on port 3000");

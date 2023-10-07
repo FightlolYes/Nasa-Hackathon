@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const map = L.map('map').setView([25.3548, 51.1839], 2)
 
