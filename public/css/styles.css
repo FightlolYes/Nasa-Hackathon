@@ -82,6 +82,7 @@ body {
   width: 100%; /* Same width as the video container */
   height: 100%; /* Same height as the video container */
   border: 1px solid #ccc;
+  z-index: 1;
   /* Additional map styles go here */
 }
 /* Reset some default styles */
@@ -100,9 +101,9 @@ body, h1, h2, p {
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  margin-bottom: 2%;
-  padding: 0 20px;
+  align-items: center;
+  padding: 0; /* Remove default padding */
+  margin: 0;
 }
 
 .navbar-logo img {
@@ -112,7 +113,8 @@ body, h1, h2, p {
 .navbar-menu {
   list-style: none;
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 110px;
 }
 
 .navbar-menu li {
