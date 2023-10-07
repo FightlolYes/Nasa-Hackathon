@@ -24,46 +24,23 @@
                 <tbody>
                     <tr>
                         <td>Surface Area</td>
-                        <td><%= surface_area %></td>
                     </tr>
                     <tr>
                         <td>Average Depth</td>
-                        <td><%= Avg_Depth %></td>
                     </tr>
                     <tr>
                         <td>Average Temperature</td>
-                        <td><%= Avg_temperature %></td>
                     </tr>
                     <tr>
                         <td>Max Depth</td>
-                        <td><%= Max_Depth %></td>
                     </tr>
                     <tr>
                         <td>Max Depth Location</td>
-                        <td><%= Max_Depth_Location %></td>
                     </tr>
                 </tbody>
                 </table>
             </div>
         </div>
-
-    <h1 class="Name">Species</h1>
-
-    <div class="row">
-    <% species.forEach( specie => { %>
-    <div class="col-md-3">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/species/<%= specie.Name %>.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title"><%= specie.Name %></h5>specie
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="/waypoint/<%= name %>/Staghorn Coral" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <% }) %>
-</div>
-    </div>
 
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>

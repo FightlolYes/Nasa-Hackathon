@@ -13,9 +13,9 @@ router.get("/:name", async (req, res) => {
     const Max_Depth = ocean.Max_Depth
     const Max_Depth_Location = ocean.Max_Depth_Location
     const Avg_temperature = ocean.Avg_temperature
+    const species = ocean.species
 
-
-    res.render("oceans", {name, description:description, surface_area, Avg_Depth, Max_Depth, Max_Depth_Location, Avg_temperature})
+    res.render("oceans", {name, description:description, surface_area, Avg_Depth, Max_Depth, Max_Depth_Location, Avg_temperature, species})
 })
 
 module.exports = router;

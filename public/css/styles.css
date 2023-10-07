@@ -24,12 +24,13 @@ body {
 
 .navbar-brand {
   font-family: 'Sulphur Point', sans-serif;
-  font-size: 200%;
+  font-size: 250%;
   color:black;
 }
 
 .navbar-item {
     font-family: 'Sulphur Point', sans-serif;
+    font-size: 150%;
     padding-left: 2%;
 }
 
@@ -83,6 +84,10 @@ tr:hover {
     text-align: center;
     margin-top: 5%;
     font-size: 90px;
+}
+
+.card {
+    margin-top: 35%;
 }
 
 .footer {

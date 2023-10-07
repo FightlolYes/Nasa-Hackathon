@@ -32,6 +32,9 @@ app.use("/api", apiRoute)
 waypointRoute = require("./routes/waypoint/waypoint")
 app.use("/waypoint", waypointRoute)
 
+specieRoute = require("./routes/species/specie")
+app.use("/waypoint/:ocean/", specieRoute)
+
 app.listen(3000, function() {
     console.log("Server started on port 3000");
 })
