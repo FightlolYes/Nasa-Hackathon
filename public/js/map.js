@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     const waypoints = [
-        {coordinates: [33.1376, 81.8262], id: 1},
+        {coordinates: [9.866224064560276,169, 169.6734452228526], id: 1},
+        {coordinates: [11.064384410094505, -109.2093559825302], id: 1},
+        {coordinates: [12.839205775242714,61.821954812449874], id: 1},
+        {coordinates: [-29.352445085841218,74.61601321246778], id: 1},
+        {coordinates: [73.65353873235472,-1.6994228578145032], id: 1},
     ]
 
     waypoints.forEach(waypoint => {
