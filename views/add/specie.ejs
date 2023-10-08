@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Species</title>
+</head>
+<body>
+    <h1>Add a New Species for <%= ocean %></h1>
+    <form action="/add/<%= ocean %>/add" method="POST">
+        <!-- Species Information Form Fields -->
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" required><br>
+
+        <label for="Scientific_name">Scientific Name:</label>
+        <input type="text" id="Scientific_name" name="Scientific_name" required><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea><br>
+
+        <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight"><br>
+
+        <label for="length">Length:</label>
+        <input type="text" id="length" name="length"><br>
+
+        <label for="lifespan">Lifespan:</label>
+        <input type="text" id="lifespan" name="lifespan"><br>
+
+        <label for="threats">Threats:</label>
+        <input type="text" id="threats" name="threats"><br>
+
+        <label for="region">Region:</label>
+        <input type="text" id="region" name="region"><br>
+
+        <label for="population_status">Population Status:</label>
+        <input type="text" id="population_status" name="population_status"><br>
+
+        <input type="submit" value="Add Species">
+    </form>
+</body>
+</html>

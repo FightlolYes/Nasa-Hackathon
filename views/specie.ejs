@@ -1,5 +1,8 @@
 <%- include("partials/header") -%>
 
+<link rel="stylesheet" href="/css/pages/specie.css">
+
+
     <h1 class="Name"><%= name %></h1>
 
     <div class="container">
@@ -16,26 +19,39 @@
 
                 <table>
                     <thead>
-                    <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
                 <tbody>
                     <tr>
-                        <td>Surface Area</td>
+                        <td>Scientific Name</td>
+                        <td><%= Scientific_name %></td>
                     </tr>
                     <tr>
-                        <td>Average Depth</td>
+                        <td>Weight</td>
+                        <td><%= weight %></td>
                     </tr>
                     <tr>
-                        <td>Average Temperature</td>
+                        <td>Length</td>
+                        <td><%= length %></td>
                     </tr>
                     <tr>
-                        <td>Max Depth</td>
+                        <td>Lifespan</td>
+                        <td><%= lifespan %></td>
                     </tr>
                     <tr>
-                        <td>Max Depth Location</td>
+                        <td>Threats</td>
+                        <td><%= threats %></td>
+                    </tr>
+                    <tr>
+                        <td>Region</td>
+                        <td><%= region %></td>
+                    </tr>
+                    <tr>
+                        <td>Population Status</td>
+                        <td><%= population_status %></td>
                     </tr>
                 </tbody>
                 </table>

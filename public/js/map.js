@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     maxBoundsViscosity: 1.0
 
-    }).setView([25.3548, 51.1839], 1)
+    }).setView([25.3548, 51.1839], 1.7)
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 3, minZoom:2
+        maxZoom: 3, minZoom:1.7
     }).addTo(map)
 
     fetch('/api/coordinates')

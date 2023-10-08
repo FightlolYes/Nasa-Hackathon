@@ -1,0 +1,148 @@
+
+body {
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+
+.home-about {
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 25px;
+    font-family: 'Yaldevi', sans-serif;
+}
+
+/* NavBar */
+.navbar {
+  padding-left: 3%;
+  padding-right: 3%;
+  color: black;
+  font-size: 200%;
+  font-family: 'Kulim Park', sans-serif;
+}
+
+.navbar-brand {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 175%;
+  color:black;
+}
+
+.navbar-item {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 100%;
+    padding-left: 2%;
+}
+
+.map-container {
+    border-width: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%; /* Set the desired width for your map container */
+    height: 20%; /* Set the desired height for your map container */
+    border: 1px solid #ccc; /* Optional: Add a border to the map container */
+}
+
+.oceans-map-container {
+    margin-left: 30%;
+    margin-right: 5%;
+    width: 50%; /* Set the desired width for your map container */
+    height: 50%; /* Set the desired height for your map container */
+    border: 1px solid #ccc; /* Optional: Add a border to the map container */
+}
+
+.description {
+    padding-top: 10%;
+    font-size: 25px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 10% auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.Name {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 90px;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.donation-box {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+    background-color: rgba(255, 255, 255, 0.7);  /* White background with 70% opacity */
+    color: rgba(0, 0, 0, 1); /* Fully opaque text color (change as per your requirement) */
+}
+
+.donation-box img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.donation-box a {
+    display: block;
+    color: #0077aa;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.donation-box a:hover {
+    text-decoration: underline;
+}
+.donation-box h2 {
+    font-size: 25px;
+    color: #0077aa;
+    margin: 10px 0;
+}
+
+.donation-box p {
+    font-size: 20px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.card {
+    margin-top: 15%;
+}
+
+.footer {
+    font-family: 'Sulphur Point', sans-serif;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 25px;
+}

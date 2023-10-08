@@ -14,10 +14,12 @@ const oceanSchema = new mongoose.Schema( {
             "Name": String,
             "Scientific_name": String,
             "description": String,
-            "Status": String,
-            "Pop_status": String,
-            "Sub_area": String,
-            "Zinc_content": String
+            "weight": String,
+            "length": String,
+            "lifespan": String,
+            "threats": String,
+            "region": String,
+            "population_status": String
         }
     ]
 })

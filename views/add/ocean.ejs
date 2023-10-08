@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Ocean</title>
+</head>
+<body>
+    <h1>Add New Ocean</h1>
+    <form action="/add" method="POST" >
+        <!-- Ocean Information Form Fields -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="Surface_area">Surface Area:</label>
+        <input type="text" id="Surface_area" name="Surface_area" required><br>
+
+        <label for="Avg_Depth">Average Depth:</label>
+        <input type="text" id="Avg_Depth" name="Avg_Depth" required><br>
+
+        <label for="Max_Depth">Max Depth:</label>
+        <input type="text" id="Max_Depth" name="Max_Depth" required><br>
+
+        <label for="Max_Depth_Location">Max Depth Location:</label>
+        <input type="text" id="Max_Depth_Location" name="Max_Depth_Location" required><br>
+
+        <label for="Avg_temperature">Average Temperature:</label>
+        <input type="text" id="Avg_temperature" name="Avg_temperature" required><br>
+
+        <label for="coordinates">Coordinates (Longitude, Latitude):</label>
+        <input type="text" id="coordinates" name="coordinates" placeholder="e.g., -88.037, 47.6224" required><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea><br>
+
+        <input type="submit" value="Add Ocean">
+    </form>
+</body>
+</html>

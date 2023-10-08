@@ -1,5 +1,7 @@
 <%- include("partials/header") -%>
 
+<link rel="stylesheet" href="/css/pages/oceans.css">
+
     <h1 class="Name"><%= name %></h1>
 
     <div class="container">
@@ -47,23 +49,26 @@
             </div>
         </div>
 
-    <h1 class="Name">Species</h1>
+    </div>
 
-    <div class="row">
-    <% species.forEach( specie => { %>
-    <div class="col-md-3">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/species/<%= specie.Name %>.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title"><%= specie.Name %></h5>specie
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="/waypoint/<%= name %>/Staghorn Coral" class="btn btn-primary">Go somewhere</a>
+    <div class="container">
+        <h1 class="Name">Species</h1>
+        <div class="row">
+          <% species.forEach(specie => { %>
+            <div class="col-md-3 mb-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/assets/species/<%= specie.Name %>.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><%= specie.Name %></h5>
+                  <p class="card-text"><%= specie.description %></p>
+                  <a href="/waypoint/<%= name %>/<%= specie.Name %>" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          <% }) %>
         </div>
       </div>
-    </div>
-    <% }) %>
-</div>
-    </div>
+      
 
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
