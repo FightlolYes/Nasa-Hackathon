@@ -48,7 +48,7 @@ router.get("/:name/:specie", async (req, res) => {
 
         const specie = ocean.species.find(specie => specie.Name === specieName)
 
-        res.render("specie", {name: specie.Name, description: specie.description, Scientific_name: specie.Scientific_name, weight: specie.weight, length: specie.length, lifespan: specie.lifespan, threats: specie.threats, region: specie.region, population_status: specie.population_status})
+        res.render("specie", {name: specie.Name, description: specie.description, Scientific_name: specie.Scientific_name, weight: specie.weight, length: specie.length, lifespan: specie.lifespan, threats: specie.threats, region: specie.region, population_status: specie.population_status, zinc_content: specie.zinc_content})
 
       } catch (error) {
         console.error(error);

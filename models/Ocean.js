@@ -19,7 +19,8 @@ const oceanSchema = new mongoose.Schema( {
             "lifespan": String,
             "threats": String,
             "region": String,
-            "population_status": String
+            "population_status": String,
+            "zinc_content": String
         }
     ]
 })

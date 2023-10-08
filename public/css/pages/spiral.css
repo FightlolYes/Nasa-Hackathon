@@ -2,68 +2,15 @@
 body {
     height: 100%;
     width: 100%;
-    background-image: url("/assets/background-home.jpg");
-    background-repeat: no-repeat;
-    color: white;
-}
-
-.prevention-list {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 4%;
-    font-family: 'Yaldevi', sans-serif;
-}
-
-.button {
-    text-align: right;
-    padding-top: 1%;
-    margin-right: 2%;
-  }
-
-.button a{
-    color: white;
-}
-  
-.homeText {
-    font-size: 40px;
-    font-family: 'Sulphur Point', sans-serif;
-    margin-left: 11%;
-    margin-right: 5%;
-}
-
-.button button {
-    margin-left: auto;
-    display: block;
-}
-
-.prevention-Item {
-    padding-top: 3%;
-    padding-bottom: 1%;
-    font-size: 30px;
-}
-
-.prevention-subItem {
-    font-size: 20px;
+    background: black;
 }
 
 .home-about {
-    margin-left: 30%;
+    margin-left: 3%;
     margin-right: 5%;
     margin-top: 5%;
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Yaldevi', sans-serif;
-}
-
-.donation-box {
-    width: 200px;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
-    background-color: rgba(255, 255, 255, 0.7);  /* White background with 70% opacity */
-    color: rgba(0, 0, 0, 1); /* Fully opaque text color (change as per your requirement) */
 }
 
 /* NavBar */
@@ -81,15 +28,10 @@ body {
   color:black;
 }
 
-.nav-link {
+.navbar-item {
     font-family: 'Sulphur Point', sans-serif;
-
     font-size: 100%;
     padding-left: 2%;
-}
-
-.imgsection {
-    text-align: center;
 }
 
 .map-container {
@@ -139,9 +81,10 @@ tr:hover {
 }
 
 .Name {
+    color: white;
     text-align: center;
     margin-top: 5%;
-    font-size: 90px;
+    font-size: 70px;
     font-family: 'Sulphur Point', sans-serif;
 }
 
@@ -151,12 +94,67 @@ section {
     padding: 30px 0;
 }
 
+.donation-box {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+    background-color: rgba(255, 255, 255, 0.7);  /* White background with 70% opacity */
+    color: rgba(0, 0, 0, 1); /* Fully opaque text color (change as per your requirement) */
+}
+
+.donation-box img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.donation-box a {
+    display: block;
+    color: #0077aa;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.donation-box a:hover {
+    text-decoration: underline;
+}
+.donation-box h2 {
+    font-size: 25px;
+    color: #0077aa;
+    margin: 10px 0;
+}
+
+.donation-box p {
+    font-size: 20px;
+    color: #555;
+    margin: 10px 0;
+}
+
 .card {
     margin-top: 15%;
 }
 
+#climateContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #climateCanvas {
+    height: 700px;
+    width: 700px;
+    background-color: black;
+  }
+
 .footer {
     font-family: 'Sulphur Point', sans-serif;
+    color: white;
     padding-top: 10%;
     padding-bottom: 1%;
     text-align: center;

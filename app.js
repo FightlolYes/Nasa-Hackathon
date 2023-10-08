@@ -28,8 +28,20 @@ app.get('/', (req, res) => {
     res.render("home")
 })
 
+app.get('/prevention', (req, res) => {
+    res.render("prevention")
+})
+
 app.get('/donate', (req, res) => {
     res.render("donate")
+})
+
+app.get('/spiral', (req, res) => {
+    res.render("spiral")
+})
+
+app.get("/about", (req, res) => {
+    res.render("about")
 })
 
 apiRoute = require("./routes/api/api")
